@@ -13,26 +13,6 @@
   "platforms": {
     "ios": "14.1"
   },
-  "dependencies": {
-    "FirebaseAnalyticsSwift": [
-
-    ],
-    "FirebaseFirestore": [
-
-    ],
-    "FirebaseInAppMessagingSwift": [
-      "> 10.12-beta"
-    ],
-    "FirebaseMessaging": [
-
-    ],
-    "FirebaseUI/Google": [
-
-    ],
-    "FirebaseUI/OAuth": [
-
-    ]
-  },
   "pod_target_xcconfig": {
     "KOTLIN_PROJECT_PATH": ":shared",
     "PRODUCT_MODULE_NAME": "MultiPlatformLibrary"

@@ -38,16 +38,16 @@ kotlin {
             export("dev.icerock.moko:mvvm-flow:0.16.1")
             export("dev.icerock.moko:graphics:0.9.0")
         }
-        pod("FirebaseAnalyticsSwift")
-        pod("FirebaseInAppMessagingSwift", "> 10.12-beta")
+//        pod("FirebaseAnalyticsSwift")
+//        pod("FirebaseInAppMessagingSwift", "> 10.12-beta")
         // ld: framework not found FirebaseFirestore
         // To fix this issue, we can use the `linkOnly` parameter in the gradle pod dsl.
         // From the KMM docs: this parameter instructs the CocoaPods plugin to use Pod dependencies
         // with dynamic frameworks without generating cinterop bindings.
-        pod("FirebaseFirestore", linkOnly = true)
-        pod("FirebaseUI/Google")
-        pod("FirebaseUI/OAuth")
-        pod("FirebaseMessaging")
+//        pod("FirebaseFirestore", linkOnly = true)
+//        pod("FirebaseUI/Google")
+//        pod("FirebaseUI/OAuth")
+//        pod("FirebaseMessaging")
     }
 
 
@@ -81,8 +81,8 @@ kotlin {
                 // Update: To use this, you need to set `isStatic = true` in your
                 // cocopods framework. BUT, then MOKO breaks, because MOKO MVVM
                 // needs to use a dynamic framework.
-                implementation("dev.gitlive:firebase-firestore:1.8.0")
-                implementation("dev.gitlive:firebase-auth:1.8.0")
+//                implementation("dev.gitlive:firebase-firestore:1.8.0")
+//                implementation("dev.gitlive:firebase-auth:1.8.0")
 
             }
         }
@@ -109,7 +109,7 @@ android {
 }
 
 multiplatformResources {
-    multiplatformResourcesPackage = "com.santansarah.kmmfirebasemessaging"
+    multiplatformResourcesPackage = "com.example.kmmplayground"
     multiplatformResourcesClassName = "SharedRes"
 }
 
